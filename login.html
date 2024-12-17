@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Psychiatrist Appointment System</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Psychiatrist-categories">Psychiatrist Categories</a></li>
+                <li><a href="#appointment-form">Book Appointment</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#signup">Signup</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to the Online Psychiatrist Appointment System</h1>
+        <p>Book your Psychiatrist's appointment easily and quickly.</p>
+    </section>
+
+    <section id="Psychiatrist-categories">
+        <h2>Psychiatrist Categories</h2>
+        <ul>
+            <li><a href="#">Community Psychiatrist</a></li>
+            <li><a href="#">Social Psychiatrist</a></li>
+            <li><a href="#">Neuropsychiatrist</a></li>
+            <li><a href="#">Medical Psychotherapist
+</a></li>
+            <li><a href="#">Addiction Psychiatrist
+</a></li>
+        </ul>
+    </section>
+
+    <section id="appointment-form">
+        <h2>Book an Appointment</h2>
+        <form action="submit_appointment.js" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="Psychiatrist">Choose a Psychiatrist:</label>
+            <select id="Psychiatrist" name="Psychiatrist" required>
+                <option value="general-practitioner">Community Psychiatrist</option>
+                <option value="Social Psychiatrist">Social Psychiatrist</option>
+                <option value="Neuropsychiatrist">Neuropsychiatrist</option>
+                <option value="Medical Psychotherapist
+">Medical Psychotherapist
+</option>
+                <option value="Addiction Psychiatrist
+">Addiction Psychiatrist
+</option>
+            </select>
+
+            <label for="date">Appointment Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+  
+    <section id="login">
+        <h2>Login</h2>
+        <form action="login.js" method="POST">
+        
+            <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="javascript:void(0)" id="showSignup">Sign Up</a></p>
+        </form>
+    </section>
+
+    <section id="signup">
+        <h2>Signup</h2>
+        <form action="signup.js" method="POST">
+            <label for="signupEmail">Email:</label>
+            <input type="email" id="signupEmail" placeholder="Enter your email" required>
+            <label for="signupPassword">Password:</label>
+            <input type="password" id="signupPassword" placeholder="Enter your password" required>
+            <button type="submit">Sign Up</button>
+            <p>Already have an account? <a href="javascript:void(0)" id="showLogin">Login</a></p>
+
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach us:</p>
+        <form action="contact.js" method="POST">
+            <label for="contact-name">Full Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+
+            <label for="contact-email">Email Address:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <label for="contact-message">Message:</label>
+            <textarea id="contact-message" name="contact-message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We provide a user-friendly platform for booking Psychiatrist's appointments. Our mission is to make healthcare more accessible and convenient for everyone.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Online Psychiatrist Appointment System. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
